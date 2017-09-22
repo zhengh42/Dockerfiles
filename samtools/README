@@ -1,0 +1,2 @@
+1.5 only includes samtools
+1.5all includes samtools, bcftools, and htslib

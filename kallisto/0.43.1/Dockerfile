@@ -1,5 +1,5 @@
 FROM phusion/baseimage
-MAINTAINER Hong Zheng <zhengh@stanford.edu>
+MAINTAINER Hong Zheng <zhengh42@stanford.edu>
 
 # Install dependencies
 
