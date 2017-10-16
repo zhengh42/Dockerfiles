@@ -1,10 +1,10 @@
-FROM phusion/baseimage
+FROM ubuntu:16.04
 
 # Install dependencies
 
 RUN apt-get update && apt-get install -y \
   curl \
-  libgomp1
+  libgomp1 
 
 # Configure version and source
 ENV STAR_VERSION 2.5.3a
@@ -16,6 +16,7 @@ RUN mkdir -p $STAR_DIR
 
 # Download & extract archive - Repo includes binaries for linux
 RUN curl -SL ${STAR_RELEASE_URL}${STAR_VERSION}.tar.gz | tar -xzC $STAR_DIR
+
 ENV PATH $STAR_DIR/STAR-${STAR_VERSION}/bin/Linux_x86_64/:$PATH
 
 CMD ["STAR"]
