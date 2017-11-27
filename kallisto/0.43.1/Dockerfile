@@ -5,7 +5,8 @@ MAINTAINER Hong Zheng <zhengh42@stanford.edu>
 
 RUN apt-get update && apt-get install -y \
   curl \
-  libgomp1
+  libgomp1 \
+  build-essential 
 
 # Configure version and source
 ENV KALLISTO_DIR /opt/kallisto
